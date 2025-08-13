@@ -1,0 +1,102 @@
+[
+  {
+    "id": "aadhaar_number",
+    "label": "Aadhaar Number / आधार संख्या",
+    "type": "text",
+    "placeholder": "Enter Your Aadhaar No",
+    "validation": {
+      "regex": "^[0-9]{12}$",
+      "message": "Please enter a valid 12-digit Aadhaar number."
+    },
+    "step": 1
+  },
+  {
+    "id": "name_of_entrepreneur",
+    "label": "Name of Entrepreneur / उद्यमी का नाम",
+    "type": "text",
+    "placeholder": "Name as per Aadhaar",
+    "validation": {
+      "required": true,
+      "message": "Name is required."
+    },
+    "step": 1
+  },
+  {
+    "id": "pan_number",
+    "label": "PAN Number",
+    "type": "text",
+    "placeholder": "ENTER PAN NUMBER",
+    "validation": {
+      "regex": "^[A-Za-z]{5}[0-9]{4}[A-Za-z]{1}$",
+      "message": "Please enter a valid PAN number."
+    },
+    "step": 2
+  },
+  {
+    "id": "pan_name",
+    "label": "Name as per PAN",
+    "type": "text",
+    "placeholder": "Name as per PAN",
+    "validation": {
+      "required": true,
+      "message": "Name is required."
+    },
+    "step": 2
+  },
+  {
+    "id": "type_of_organization",
+    "label": "Type of Organisation / संगठन के प्रकार",
+    "type": "select",
+    "options": [
+      "1. Proprietary / एकल स्वामित्व",
+      "2. Hindu Undivided Family / हिंदू अविभाजित परिवार (एचयूएफ)",
+      "3. Partnership / पार्टनरशिप",
+      "4. Co-Operative / सहकारी",
+      "5. Private Limited Company / प्राइवेट लिमिटेड कंपनी",
+      "6. Public Limited Company / पब्लिक लिमिटेड कंपनी",
+      "7. Self Help Group / स्वयं सहायता समूह",
+      "8. Limited Liability Partenership / सीमित दायित्व भागीदारी",
+      "9. Society / सोसाईटी",
+      "10. Trust / ट्रस्ट",
+      "11. Others / अन्य"
+    ],
+    "validation": {
+      "required": true,
+      "message": "Type of Organisation is required."
+    },
+    "step": 2
+  },
+  {
+    "id": "pin_code",
+    "label": "PIN Code",
+    "type": "text",
+    "placeholder": "e.g., 110001",
+    "validation": {
+      "regex": "^[0-9]{6}$",
+      "message": "Please enter a valid 6-digit PIN code."
+    },
+    "step": 3
+  },
+  {
+    "id": "state",
+    "label": "State",
+    "type": "text",
+    "placeholder": "Enter your State",
+    "validation": {
+      "required": true,
+      "message": "State is required."
+    },
+    "step": 3
+  },
+  {
+    "id": "city",
+    "label": "City",
+    "type": "text",
+    "placeholder": "Enter your City",
+    "validation": {
+      "required": true,
+      "message": "City is required."
+    },
+    "step": 3
+  }
+]

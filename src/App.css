@@ -1,0 +1,225 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #eef2f8; /* Light blue-gray background */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to the top for better scrolling */
+}
+
+.udyam-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px; /* Increased max-width for a wider layout */
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #ffffff; /* White background for the main content area */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-top {
+  background-color: #1806B9CC;
+  border-bottom: 3px solid #1e40af; /* Deeper blue border */
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 45px;
+  height: auto;
+  margin-right: 12px;
+}
+
+.header-title p {
+  margin: 0;
+  font-size: 15px;
+  color: #ffffff; /* Deeper blue for text */
+  font-weight: bold;
+}
+
+.header-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.header-nav a:hover {
+  color: #3b82f6; /* Lighter blue on hover */
+}
+
+.main-content {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; /* Allow main content to grow and fill space */
+}
+
+.form-wrapper {
+  background-color: #f0f8ff; /* Very light blue background for the form box */
+  border: 1px solid #d1d5db; /* Lighter border color */
+  border-radius: 12px;
+  width: 100%;
+  max-width: 960px; /* Keep form within a readable width */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.main-form-title {
+  background-color: #ffffff;
+  color: #241b63;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px 24px;
+  margin: 0;
+  text-align: center;
+}
+
+.form-section {
+  padding: 24px;
+}
+
+.step-header {
+  background-color: #3b82f6; /* Vibrant blue */
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+
+.form-fields-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.form-field {
+  margin-bottom: 18px;
+}
+
+.form-field label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.field-number {
+  color: #1e40af; /* Deeper blue for numbering */
+  margin-right: 6px;
+}
+
+.form-field input, .form-field select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: #ffffff; /* This line ensures the background is white */
+  color: #000000; /* This line ensures the text is black */
+}
+
+.form-field input:focus, .form-field select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+.input-error {
+  border-color: #ef4444; /* Brighter red for errors */
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.disclaimer-box {
+  background-color: #f0f9ff; /* Very light blue */
+  border: 1px solid #93c5fd; /* Light blue border */
+  border-left: 5px solid #3b82f6;
+  padding: 18px;
+  border-radius: 8px;
+  margin-top: 24px;
+  color: #000000;
+}
+
+.disclaimer-list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.disclaimer-list li {
+  margin-bottom: 6px;
+}
+
+.consent-checkbox {
+  margin-top: 18px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.consent-checkbox input {
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+.consent-checkbox label {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.validate-button, .submit-button {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.validate-button:hover, .submit-button:hover {
+  background-color: #2563eb;
+}
+
+.validate-button:disabled, .submit-button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
